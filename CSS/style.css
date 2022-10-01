@@ -1,0 +1,284 @@
+*{
+    background: rgb(204, 228, 181);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    
+    overflow-x:hidden!important;
+}
+
+.logo{
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 0;
+}
+
+.boton-principal{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 269px;
+    height: 66px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    background: rgb(95, 189, 7);
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.desistir{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 269px;
+    height: 66px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    display: flex;
+    background: rgb(120, 143, 113);
+    text-align: center;
+    color: #000000;
+}
+.boton-principal:hover{
+    cursor: pointer;
+}
+
+#iniciar-juego{
+    display: block;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    background: rgb(153, 27, 27);
+    font-size: 35px;
+    font-weight: 200;
+    border-radius: 24px;
+    border-color: rgb(148, 69, 4);
+    width: 317px;
+    height: 114px;
+    position: absolute;
+    top: 250px;
+    left: 561px;
+    text-decoration: none;
+}
+#iniciar-juego:hover{
+    opacity: 0.6;
+    text-decoration: none;
+     cursor: pointer ;
+  }
+#agregar-palabra{
+    display: block;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    font-size: 20px;
+    gap: 8px;
+    font-weight: bolder;
+    border: 1px solid rgb(10, 6, 2);;
+    border-radius: 24px;
+    width: 200px;
+    height: 67px;
+    box-sizing: border-box;
+    color: rgb(17, 9, 3);
+    position: relative;
+    left: 620px;
+    top: 350px;
+    text-decoration: none;
+}
+#agregar-palabra:hover{
+    cursor: pointer;
+}
+a:link, a:visited, a:active{
+    text-decoration:none;
+}
+
+/*Empieza agregar la palabra.html*/
+
+#ingrese-palabra{
+    position: relative;
+    width: 299px;
+    height: 48px;
+    left: 376px;
+    top: 150px;
+    border: 0;
+    outline: none;
+    font-size: 32px;
+}
+
+::placeholder { 
+    color: rgb(148, 69, 4);
+    font-size: 32px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#icono{
+    position: relative;
+    top: 453px;
+    left: 373px;
+}
+
+.advertencia{
+    display: inline;
+    position: relative;
+    top: 450px;
+    left: 376px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#guardar{
+    position: relative;
+    top: 500px;
+    left: 250px;
+    display: inline-block;
+    border-radius: 24px;
+    border-color: rgb(148, 69, 4);
+    background:rgb(148, 69, 4);
+}
+
+#cancelar{
+    position: relative;
+    top: 500px;
+    left: 300px;
+    display: inline-block;
+    border-radius: 24px;
+    border-color: rgb(148, 69, 4);
+    color: rgb(148, 69, 4);
+}
+
+/*Empieza Nuevo juego.html*/
+
+#base{
+    position: relative;
+    left: 625px;
+    top: 30px;
+    width: 250px;
+}
+
+#guiones{
+    height: 3em;
+}
+
+#guiones span{
+    vertical-align: bottom;
+    position: relative;
+    left: 575px;
+    top: 100px;
+    font-size: 2em;
+    border-bottom: 2px solid rgb(148, 69, 4);
+    width: 30px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block; /* sin esto por ser un elemento de linea, no tomaria el width*/
+}
+
+#teclado{
+    position: relative;
+    left: 575px;
+    top: 100px;
+    gap: 9px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#teclado button{
+    margin-top: 15px;
+    width: 28px;
+    padding: 6px 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFFFFF;
+}
+
+.teclas button{
+    position: relative;
+    left: 55px;
+}
+
+#teclado button:hover{
+    cursor: pointer;
+}
+
+#nuevo-juego{
+    position: relative;
+    top: 150px;
+    left: 450px;
+    display: inline-block;
+    border-radius: 24px;
+    border-color: rgb(148, 69, 4);
+    background:rgb(148, 69, 4);
+}
+#nuevo-juego:hover{
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+#desistir{
+    position: relative;
+    top: 150px;
+    left: 500px;
+    display: inline-block;
+    border-radius: 24px;
+    border-color: rgb(148, 69, 4);
+    color: rgb(148, 69, 4);
+}
+
+#resultado{
+    position: relative;
+    left: 600px;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.social-bar{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+
+.icon-facebook{
+    background: #2e406e;
+}
+
+.icon-instagram{
+    background: #d6249f;
+}
+
+.icon-linkedin{
+    background: #0e76a8;
+}
+
+.icon-github{
+    background: #171515;
+}
+
+.icon:first-child{
+    border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child{
+    border-radius: 0 0 0 1rem;
+}
+
+.icon:hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5 rgba(0, 0, 0, 0.42);
+}
